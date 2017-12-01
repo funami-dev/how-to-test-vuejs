@@ -17,9 +17,9 @@
     "axios": "^0.16.2",
     "material-components-vue": "^0.2.0",
     "material-components-web": "^0.26.0",
-    "vue": "^2.5.2",
+    "vue": "^2.5.9",
     "vue-router": "^3.0.1",
-    "vuetify": "^0.17.2"
+    "vuetify": "^0.17.3"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -85,11 +85,11 @@
     "url-loader": "^0.5.8",
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",
-    "vue-template-compiler": "^2.5.2",
+    "vue-template-compiler": "^2.5.9",
     "vue-test-utils": "^1.0.0-beta.5",
-    "webpack": "^3.6.0",
+    "webpack": "^3.9.1",
     "webpack-bundle-analyzer": "^2.9.0",
-    "webpack-dev-server": "^2.9.1",
+    "webpack-dev-server": "^2.9.5",
     "webpack-merge": "^4.1.0"
   },
   "engines": {
