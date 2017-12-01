@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="methods.spec."
+    errors="0" failures="0" hostname="" id="" package="methods.spec." skipped="0"
+    tests="1" time="5.786" timestamp="Fri, 01 Dec 2017 13:50:07 GMT">
+  
+    <testcase name="is async methods correct" classname="methods.spec." time="5.786" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

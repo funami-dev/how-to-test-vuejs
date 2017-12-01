@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="isNavigation"
+    errors="0" failures="1" hostname="" id="" package="isNavigation" skipped="0"
+    tests="1" time="7.050" timestamp="Fri, 01 Dec 2017 09:43:37 GMT">
+  
+    <testcase name="is Navigation correct" classname="isNavigation" time="7.050" assertions="2">
+
+      <failure message="Testing if element &lt;.mdl-navigation a&gt; is present.">    at Object.test [as is Navigation correct] (/Users/daniel.weber/ownCloud/how-to-test-vuejs/how-to-test-vuejs/test/e2e/specs/isNavigation.js:11:15)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

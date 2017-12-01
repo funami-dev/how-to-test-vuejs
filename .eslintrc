@@ -1,0 +1,64 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2017,
+    "ecmaFeatures": {
+      "globalReturn": false,
+      "impliedStrict": false,
+      "jsx": false,
+      "experimentalObjectRestSpread": false
+    }
+  },
+  "extends": [
+    "plugin:vue/base"
+  ],
+  "globals": {
+    "window": true,
+    "document": true
+  },
+  "plugins": ["html"],
+  "settings": {
+    "import/resolver": "webpack",
+    "html/html-extensions": [".html", ".vue"]
+  },
+  "rules": {
+    "jsx-a11y/img-has-alt": [0],
+    "jsx-a11y/href-no-hash": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "no-shadow": "off",
+    "indent": 0,
+    "import/extensions": ["off", "always", {
+      "js": "never",
+      "vue": "never"
+    }],
+    "object-curly-newline": ["error", {
+      "multiline": true,
+      "minProperties": 1
+    }],
+    "space-in-parens": ["error", "never"],
+    "object-curly-spacing": ["error", "always", { "objectsInObjects": false }],
+    "space-before-function-paren": ["error", "never"],
+    "semi": ["error", "always"],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "never",
+        "objects": "never",
+        "imports": "never",
+        "exports": "never",
+        "functions": "ignore"
+      }
+    ],
+    "max-len": [
+      2,
+      {
+        "code": 120,
+        "ignoreComments": true,
+        "ignoreTrailingComments": true,
+        "ignoreStrings": true,
+        "ignoreUrls": true
+      }
+    ]
+  }
+}
