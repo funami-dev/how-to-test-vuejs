@@ -3,15 +3,20 @@
 > Boilerplate how to test vuejs
 
 ## How to test...
-* props
-* methods
-* text content
-* is element visible
-* is component present
-* time to show app (coming...)
-* computed (comming...)
-* mount (comming...)
-* routing (comming...)
+* ☑ Props
+* ☑ Elements
+* ☑ Text content
+* ☑ Methods
+* ☑ Computed
+* ☑ is element visible
+
+more to come
+* ☐ is component present
+* ☐ time to show app
+* ☐ mount
+* ☐ routing
+
+<!-- ☐ ☑ -->
 
 ## Build Setup
 
@@ -40,12 +45,7 @@ npm test
 
 # Testing {{page.title}}
 
-![Alternative text](./runtest.gif "running tests...")
-
-Get the files:
-
-
-Testing vueJS with mocha, sinon, chai and nightwatch. E2E Test and Unit tests.
+Testing vueJS with karma, mocha, sinon, chai and nightwatch. E2E Test and Unit tests.
 
 ```javascript
 browsers: ['PhantomJS'],
@@ -55,7 +55,7 @@ frameworks: ['mocha', 'sinon', 'chai', 'sinon-chai']
 ## Elements
 E2E: Test is an element visible and text contains right
 
-*** ./src/components/elements/index.vue ***
+**./src/components/elements/index.vue**
 ```javascript
 <template>
   <div id="testElements">
@@ -64,7 +64,7 @@ E2E: Test is an element visible and text contains right
 </template>
 ```
 
-*** ./test/e2e/specs/elements.spec.js ***
+**./test/e2e/specs/elements.spec.js**
 ```javascript
 module.exports = {
   'is headline correct': function test(browser) {
@@ -81,7 +81,7 @@ module.exports = {
 ## Props
 Unit: Test props are pass properly
 
-*** ./src/components/props/props.spec.js ***
+**./src/components/props/props.spec.js**
 ```javascript
 import Vue from 'vue';
 import Props from './index';
@@ -105,7 +105,7 @@ describe('Test props', () => {
 });
 ```
 
-*** ./src/components/props/index.vue ***
+**./src/components/props/index.vue**
 ```javascript
 <template>
     <div class="testProps">
@@ -141,7 +141,7 @@ export default {
 ## Computed
 Unit: Test computed work properly
 
-*** ./src/components/computed/computed.spec.js ***
+**./src/components/computed/computed.spec.js**
 ```javascript
 import Vue from 'vue';
 import Computed from './index';
@@ -163,7 +163,7 @@ describe('The Dude', () => {
 });
 ```
 
-*** ./src/components/computed/index.vue ***
+**./src/components/computed/index.vue**
 ```javascript
 import Vue from 'vue';
 import Computed from './index';
@@ -211,7 +211,7 @@ describe('Test computed', () => {
 ## Methods
 Test synchron methods
 
-*** ./src/components/methods/methods.spec.js ***
+**./src/components/methods/methods.spec.js**
 ```javascript
 import Vue from 'vue';
 import Methods from './index';
@@ -233,7 +233,7 @@ describe('Test methods', () => {
 });
 ```
 
-*** ./src/components/methods/index.vue ***
+**./src/components/methods/index.vue**
 ```javascript
 <template>
     <div class="testMethods">
@@ -304,7 +304,7 @@ coming sooner or later...
 
 ## E2E Screenshots
 E2E Screenshot
-*** ./test/e2e/specs/screenshots.spec.js ***
+**./test/e2e/specs/screenshots.spec.js**
 ```javascript
 module.exports = {
   'make screenshots': function test(browser) {
@@ -322,7 +322,7 @@ module.exports = {
 
 ## E2E Methods
 
-*** ./test/e2e/specs/methods.spec.js ***
+**./test/e2e/specs/methods.spec.js**
 ```javascript
 module.exports = {
   'is async methods correct': function test(browser) {
