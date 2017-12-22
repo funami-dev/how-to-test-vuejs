@@ -14,7 +14,20 @@ describe('Test props', () => {
     }).$mount();
 
     expect(vm.$el.querySelector('.isDude')).to.not.equal(null);
-    expect(vm.$el.querySelector('h3 span').textContent).to.equal('Lebowski');
-    expect(vm.$el.querySelector('h3 em').textContent).to.equal('1');
+    expect(vm.$el.querySelector('p span').textContent).to.equal('Lebowski');
+    expect(vm.$el.querySelector('p em').textContent).to.equal('1');
+  });
+  it('is props correct', () => {
+    const vm = new Constructor({
+      propsData: {
+        isDude: true,
+        count: 1,
+        name: 'Lebowski',
+      },
+    }).$mount();
+
+    expect(vm.$el.querySelector('.isDude')).to.not.equal(null);
+    expect(vm.$el.querySelector('p span').textContent).to.equal('Lebowski');
+    expect(vm.$el.querySelector('p em').textContent).to.equal('1');
   });
 });

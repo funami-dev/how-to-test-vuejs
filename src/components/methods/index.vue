@@ -1,14 +1,18 @@
 <template>
     <div class="testMethods">
         <div v-if="isDude" class="isDude">
-            <button @click="getRandomQuote">Random quote</button>
-            <h3><span>{{name}} say:</span></h3>
-            <pre v-if="randomQuote">
-              {{randomQuote}}
-            </pre>
+            <p>
+              <span>{{name}} say:</span><br>
+              <span v-if="randomQuote">
+                {{randomQuote}}
+              </span>
+            </p>
+            <p>
+              <button @click="getRandomQuote">Random quote</button>
+            </p>
         </div>
         <div v-else>
-            There is no dude
+            <p>There is no dude</p>
         </div>
     </div>
 </template>
@@ -33,7 +37,9 @@ export default {
   methods: {
     getRandomQuote() {
       // eslint-disable-next-line
-      const randomNumber = (Math.random() * (this.quotes.length - 0) + 0).toFixed(0);
+      const randomNumber = (Math.random() * (this.quotes.length - 0) +
+        0
+      ).toFixed(0);
       this.randomQuote = this.quotes[randomNumber];
     },
     getDataFromApi() {

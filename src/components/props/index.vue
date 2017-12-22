@@ -1,10 +1,10 @@
 <template>
     <div class="testProps">
         <div v-if="isDude" class="isDude">
-            <h3>There are <em>{{count}}</em> Dudes called <span>{{name}}</span></h3>
+            <p>There are <em>{{count}}</em> Dudes called <span>{{name}}</span></p>
         </div>
         <div v-else>
-            There is no dude
+            <p>There is no dude</p>
         </div>
     </div>
 </template>

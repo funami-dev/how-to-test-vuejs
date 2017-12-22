@@ -1,15 +1,15 @@
 <template>
     <div class="testMethods">
         <div v-if="isDude" class="isDude">
-            <button class="getDataFromApi" @click="getDataFromApi">Get async data</button>
             <div v-if="!loading">
-              <pre v-if="data">
+              <p v-if="data" class="response">
                 {{data}}
-              </pre>
+              </p>
             </div>
             <div v-else>
               <p>loading...</p>
             </div>
+            <button :disabled="loading" class="getDataFromApi" @click="getDataFromApi">Get async data</button>
         </div>
     </div>
 </template>

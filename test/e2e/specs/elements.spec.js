@@ -4,7 +4,7 @@ module.exports = {
     browser
       .url(devServer)
       .waitForElementVisible('#app', 5000)
-      .assert.containsText('h1', 'Lets test vueJs')
+      .assert.containsText('.headline', 'Lets test vueJs')
       .assert.elementNotPresent('pre')
       .end();
   },

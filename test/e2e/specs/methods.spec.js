@@ -6,8 +6,8 @@ module.exports = {
       .waitForElementVisible('#app', 5000)
       .assert.containsText('button.getDataFromApi', 'Get async data')
       .click('button.getDataFromApi')
-      .waitForElementVisible('pre', 5000)
-      .assert.containsText('pre', 'nix gefunden')
+      .waitForElementVisible('.response', 5000)
+      .assert.containsText('.response', 'nix gefunden')
       .end();
   },
 };

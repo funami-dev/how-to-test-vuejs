@@ -1,31 +1,32 @@
 <template>
   <div id="app">
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
-      <!-- <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">How to test vueJS</span>
-        <nav class="mdl-navigation">
-          <router-link to="readme" tag="span">
-            <a class="mdl-navigation__link">ReadMe</a>
-          </router-link>
-          <router-link to="testme" tag="span">
-            <a class="mdl-navigation__link">Testme</a>
-          </router-link>
-        </nav>
-      </div> -->
-      <main class="mdl-layout__content">
-        <div class="page-content">
-          <p>Test elements</p>
-          <Elements />
-          <p>Test props with *** Props :name="'Lebowski'" ***</p>
-          <Props :name="'Lebowski'" />
-          <p>Test computed</p>
-          <Computed :count="3" />
-          <Computed :count="1" />
-          <Methods :name="'Lebowski'" />
-          <AsyncMethods :name="'Lebowski'" />
-          <router-view/>
-        </div>
-      </main>
+        <!-- <div class="flex flex-column"> -->
+        <div class="table">
+          <div class="row">
+            <div><h6>Elements</h6></div>
+            <div><Elements /></div>
+          </div>
+          <div class="row">
+            <div><h6>Props</h6></div>
+            <div><Props :name="'Lebowski'" /></div>
+          </div>
+          <div class="row">
+            <div><h6>Computed</h6></div>
+            <div><Computed :count="3" /></div>
+          </div>
+          <div class="row">
+            <div><h6>Computed</h6></div>
+            <div><Computed :count="1" /></div>
+          </div>
+          <div class="row">
+            <div><h6>Methods</h6></div>
+            <div><Methods :name="'Lebowski'" /></div>
+          </div>
+          <div class="row">
+            <div><h6>AsyncMethods</h6></div>
+            <div><AsyncMethods :name="'Lebowski'" /></div>
+          </div>
+          <!-- <router-view/> -->
     </div>
   </div>
 </template>
@@ -49,7 +50,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -58,5 +59,29 @@ body {
   background: #fff;
   color: #000;
   margin: 0;
+  p,
+  h6,
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-align: left;
+  }
+}
+.table {
+  display: table;
+  width: 100%;
+  .row {
+    display: table-row;
+    div {
+      display: table-cell;
+      &:nth-child(1) {
+        width: 30%;
+      }
+      &:nth-child(2) {
+        width: 70%;
+      }
+    }
+  }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div id="testElements">
-    <h1>Lets test vueJs</h1>
+    <p class="headline">Lets test vueJs</p>
   </div>
 </template>
 <script>
