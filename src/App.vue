@@ -26,6 +26,14 @@
             <div class="item"><h6>AsyncMethods</h6></div>
             <div class="item"><AsyncMethods :name="'Lebowski'" /></div>
           </div>
+          <div class="row">
+            <div class="item"><h6>Dynamical generated tests</h6></div>
+            <div class="item"><p>Toggle should be true</p><Toggle :dudeName="'Lebowski'" :isDude="true" /></div>
+          </div>
+          <div class="row">
+            <div class="item"><h6>Dynamical generated tests</h6></div>
+            <div class="item"><p>Toggle should be false</p><Toggle :dudeName="''" :isDude="true" /></div>
+          </div>
           <!-- <router-view/> -->
     </div>
   </div>
@@ -37,6 +45,7 @@ import Props from './components/props/';
 import Computed from './components/computed/';
 import Methods from './components/methods/';
 import AsyncMethods from './components/asyncMethods/';
+import Toggle from './components/toggle/';
 
 export default {
   name: 'app',
@@ -46,6 +55,7 @@ export default {
     Computed,
     Methods,
     AsyncMethods,
+    Toggle,
   },
 };
 </script>
