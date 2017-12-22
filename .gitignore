@@ -5,6 +5,7 @@ npm-debug.log
 
 test/e2e/reports
 test/e2e/screenshot
+test/unit/coverage
 test/unit/coverage/lcov-report
 
 # cordova stuff
