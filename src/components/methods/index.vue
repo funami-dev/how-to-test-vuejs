@@ -1,20 +1,18 @@
 <template>
-    <div class="testMethods">
-        <div v-if="isDude" class="isDude">
-            <p>
-              <span>{{name}} say:</span><br>
-              <span v-if="randomQuote">
-                {{randomQuote}}
-              </span>
-            </p>
-            <p>
-              <button @click="getRandomQuote">Random quote</button>
-            </p>
-        </div>
-        <div v-else>
-            <p>There is no dude</p>
-        </div>
-    </div>
+  <div v-if="isDude" class="isDude">
+      <p>
+        <strong>{{name}} say:</strong><br>
+        <span v-if="randomQuote">
+          {{randomQuote}}
+        </span>
+      </p>
+      <p>
+        <button @click="getRandomQuote">Random quote</button>
+      </p>
+  </div>
+  <div v-else>
+      <p>There is no dude</p>
+  </div>
 </template>
 <script>
 export default {

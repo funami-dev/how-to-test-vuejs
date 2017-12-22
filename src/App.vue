@@ -3,28 +3,28 @@
         <!-- <div class="flex flex-column"> -->
         <div class="table">
           <div class="row">
-            <div><h6>Elements</h6></div>
-            <div><Elements /></div>
+            <div class="item"><h6>Elements</h6></div>
+            <div class="item"><Elements /></div>
           </div>
           <div class="row">
-            <div><h6>Props</h6></div>
-            <div><Props :name="'Lebowski'" /></div>
+            <div class="item"><h6>Props</h6></div>
+            <div class="item"><Props :name="'Lebowski'" /></div>
           </div>
           <div class="row">
-            <div><h6>Computed</h6></div>
-            <div><Computed :count="3" /></div>
+            <div class="item"><h6>Computed</h6></div>
+            <div class="item"><Computed :count="3" /></div>
           </div>
           <div class="row">
-            <div><h6>Computed</h6></div>
-            <div><Computed :count="1" /></div>
+            <div class="item"><h6>Computed</h6></div>
+            <div class="item"><Computed :count="1" /></div>
           </div>
           <div class="row">
-            <div><h6>Methods</h6></div>
-            <div><Methods :name="'Lebowski'" /></div>
+            <div class="item"><h6>Methods</h6></div>
+            <div class="item"><Methods :name="'Lebowski'" /></div>
           </div>
           <div class="row">
-            <div><h6>AsyncMethods</h6></div>
-            <div><AsyncMethods :name="'Lebowski'" /></div>
+            <div class="item"><h6>AsyncMethods</h6></div>
+            <div class="item"><AsyncMethods :name="'Lebowski'" /></div>
           </div>
           <!-- <router-view/> -->
     </div>
@@ -72,8 +72,12 @@ body {
   display: table;
   width: 100%;
   .row {
+    &:nth-child(even) {
+      background: #fafafa;
+    }
     display: table-row;
-    div {
+    div.item {
+      padding: 8px;
       display: table-cell;
       &:nth-child(1) {
         width: 30%;

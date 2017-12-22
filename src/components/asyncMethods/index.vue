@@ -1,17 +1,17 @@
 <template>
-    <div class="testMethods">
-        <div v-if="isDude" class="isDude">
-            <div v-if="!loading">
-              <p v-if="data" class="response">
-                {{data}}
-              </p>
-            </div>
-            <div v-else>
-              <p>loading...</p>
-            </div>
-            <button :disabled="loading" class="getDataFromApi" @click="getDataFromApi">Get async data</button>
-        </div>
-    </div>
+  <div v-if="isDude" class="isDude">
+      <div v-if="!loading">
+        <p v-if="data" class="response">
+          {{data}}
+        </p>
+      </div>
+      <div v-else>
+        <p>loading...</p>
+      </div>
+      <p>
+        <button :disabled="loading" class="getDataFromApi" @click="getDataFromApi">Get async data</button>
+      </p>
+  </div>
 </template>
 <script>
 export default {
