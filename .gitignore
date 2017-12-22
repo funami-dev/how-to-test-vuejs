@@ -3,9 +3,14 @@ node_modules/
 npm-debug.log
 /www
 
+test/e2e/reports
+test/e2e/screenshot
+test/unit/coverage/lcov-report
+
 # cordova stuff
 /platforms
 /plugins
 
 # Firebase configuration
 google-services.json
+selenium-debug.log
