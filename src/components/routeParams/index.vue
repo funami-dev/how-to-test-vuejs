@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>Hello {{name}} :)</p>
+    <p>Hello {{nameFromParams}} :)</p>
     <p><router-link to="/">back</router-link></p>
   </div>
 </template>
@@ -9,8 +9,8 @@
 export default {
   name: 'routeParams',
   computed: {
-    name() {
-      return this.$route.params.id;
+    nameFromParams() {
+      return (typeof this.$route.params.id !== 'undefined') ? this.$route.params.id : '';
     },
   },
 };

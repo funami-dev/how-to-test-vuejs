@@ -3,8 +3,9 @@ import Methods from './index';
 
 const Constructor = Vue.extend(Methods);
 
-describe('Test methods', () => {
-  it('Dude always speaks a quote', () => {
+describe('METHODS', () => {
+describe('#getRandomQuote', () => {
+  it('is not empty', () => {
     const vm = new Constructor({
       propsData: {
         isDude: true,
@@ -15,4 +16,5 @@ describe('Test methods', () => {
 
     expect(vm.getRandomQuote).to.not.equal('');
   });
+});
 });

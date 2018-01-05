@@ -30,38 +30,40 @@ import Computed from './index';
 
 const Constructor = Vue.extend(Computed);
 
-describe('Test computed', () => {
-  it('there is just one Dude', () => {
-    const vm = new Constructor({
-      propsData: {
-        isDude: true,
-        count: 1,
-        name: 'Lebowski',
-      },
-    }).$mount();
+describe('COMPUTED', () => {
+  describe('#isJustOneDude', () => {
+    it('there is just one Dude', () => {
+      const vm = new Constructor({
+        propsData: {
+          isDude: true,
+          count: 1,
+          name: 'Lebowski',
+        },
+      }).$mount();
 
-    expect(vm.isJustOneDude).to.equal(true);
-  });
-  it('there are more than one Dude', () => {
-    const vm = new Constructor({
-      propsData: {
-        isDude: true,
-        count: 2,
-        name: 'Lebowski',
-      },
-    }).$mount();
+      expect(vm.isJustOneDude).to.equal(true);
+    });
+    it('there are more than one Dude', () => {
+      const vm = new Constructor({
+        propsData: {
+          isDude: true,
+          count: 2,
+          name: 'Lebowski',
+        },
+      }).$mount();
 
-    expect(vm.isJustOneDude).to.equal(false);
-  });
-  it('there are no negative Dudes', () => {
-    const vm = new Constructor({
-      propsData: {
-        isDude: true,
-        count: -1,
-        name: 'Lebowski',
-      },
-    }).$mount();
+      expect(vm.isJustOneDude).to.equal(false);
+    });
+    it('there are no negative Dudes', () => {
+      const vm = new Constructor({
+        propsData: {
+          isDude: true,
+          count: -1,
+          name: 'Lebowski',
+        },
+      }).$mount();
 
-    expect(vm.isJustOneDude).to.equal(false);
+      expect(vm.isJustOneDude).to.equal(false);
+    });
   });
 });

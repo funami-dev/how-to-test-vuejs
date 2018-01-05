@@ -1,13 +1,14 @@
 import Vue from 'vue';
 import RouteParams from './index';
 
-const Constructor = Vue.extend(RouteParams);
-
-describe('Test route params', () => {
-  it('should be Dude', () => {
-    const vm = new Constructor().$mount();
-    vm.$route = { params: { id: 'Dude' } };
-
-    expect(vm.name).to.equal('Dude');
+describe('PARAMS', () => {
+  describe('#nameFromParams', () => {
+    it('should be Dude', () => {
+      const Constructor = Vue.extend(RouteParams);
+      const vm = new Constructor();
+      vm.$route = { params: { id: 'Dude' } };
+      vm.$mount();
+      expect(vm.nameFromParams).to.equal('Dude');
+    });
   });
 });

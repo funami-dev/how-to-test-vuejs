@@ -26,12 +26,12 @@
             <div class="item"><AsyncMethods :name="'Lebowski'" /></div>
           </div>
           <div class="row">
-            <div class="item"><h6>Dynamical generated tests</h6></div>
-            <div class="item"><p>Toggle should be true</p><Toggle :dudeName="'Lebowski'" :isDude="true" /></div>
+            <div class="item"><h6>TestScenarios</h6></div>
+            <div class="item"><p>Toggle should be true</p><TestScenarios :dudeName="'Lebowski'" :isDude="true" /></div>
           </div>
           <div class="row">
-            <div class="item"><h6>Dynamical generated tests</h6></div>
-            <div class="item"><p>Toggle should be false</p><Toggle :dudeName="''" :isDude="true" /></div>
+            <div class="item"><h6>TestScenarios</h6></div>
+            <div class="item"><p>Toggle should be false</p><TestScenarios :dudeName="''" :isDude="true" /></div>
           </div>
           <div class="row">
             <div class="item"><h6>Route params tests</h6></div>
@@ -52,17 +52,17 @@ import Props from './components/props/';
 import Computed from './components/computed/';
 import Methods from './components/methods/';
 import AsyncMethods from './components/asyncMethods/';
-import Toggle from './components/toggle/';
+import TestScenarios from './components/testScenarios/';
 
 export default {
-  name: 'app',
+  name: 'Components',
   components: {
     Elements,
     Props,
     Computed,
     Methods,
     AsyncMethods,
-    Toggle,
+    TestScenarios,
   },
 };
 </script>
