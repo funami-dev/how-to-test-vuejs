@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Props from '@/components/props/';
-import Elements from '@/components/elements/';
+import RouteParams from '@/components/routeParams';
 
 Vue.use(Router);
 
@@ -10,28 +9,9 @@ export default new Router({
   saveScrollPosition: true,
   routes: [
     {
-      path: '/Props',
-      name: 'Props',
-      component: Props,
+      path: '/RouteParams/:id',
+      name: 'RouteParams',
+      component: RouteParams,
     },
-    {
-      path: '/Elements',
-      name: 'Elements',
-      component: Elements,
-      // children: [
-      //   {
-      //     path: '/testme/:uuid',
-      //     name: 'unterseiteTest',
-      //     component: unterseiteTest,
-      //     meta: {
-      //       isYeah: true,
-      //     },
-      //   },
-      // ],
-    },
-    // {
-    //   path: '*',
-    //   redirect: '/ReadMe',
-    // },
   ],
 });
